@@ -1,0 +1,184 @@
+.aside_in {
+    width: 249px;
+    .mostPopularNews {
+        width: 238px;
+        height: 30px;
+        border: 1px solid #ddd;
+        line-height: 30px;
+        i {
+            @include display;
+            @include icons-sprite(Icon);
+            margin: 8px 9px 0 9px;
+        }
+    }
+    .aside_info_block3_in {
+        @include display;
+        width: 232px;
+        border: 1px solid #ddd;
+        margin-top: 7px;
+        padding: 3px;
+        .aside_info_block3_img img{
+            @include display;
+            width: 232px;
+            height: 100px;
+            background-size: 100%;
+        }
+        .aside_info_block3_title {
+            @include display;
+            width: 140px;
+            h1 {
+                margin-top: 4px;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        .aside_info_block3_votes {
+            @include display;
+            width: 85px;
+            margin: 4px 0 0 0;
+            i {
+                @include display;
+                @include icons-sprite(Star);
+            }
+            i1 {
+                @include display;
+                @include icons-sprite(Star1);
+            }
+            i2 {
+                @include display;
+                @include icons-sprite(Star2);
+            }
+            i3 {
+                @include display;
+                @include icons-sprite(Star3);
+            }
+            i4 {
+                @include display;
+                @include icons-sprite(Star4);
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .mostPopularVideos {
+        width: 238px;
+        height: 30px;
+        border: 1px solid #ddd;
+        line-height: 30px;
+        margin: 9px 0 0 0;
+        i {
+            @include display;
+            @include icons-sprite(Icon1);
+            margin: 8px 9px 0 9px;
+        }
+    }
+    .video{
+        margin-top: 7px;
+    }
+    .upcomingEvents {
+        @include display;
+        width: 238px;
+        height: 30px;
+        border: 1px solid #ddd;
+        line-height: 30px;
+        margin: 9px 0 0 0;
+        i {
+            @include display;
+            @include icons-sprite(Icon3);
+            margin: 6px 9px 0 9px;
+        }
+        .upcomingEvents_arrow {
+            @include display;
+            top: -2px;
+            float: right;
+            color: #ddd;
+            .arrowAgo {
+                @include display;
+                @include icons-sprite(Prev-Arrow);
+                right: -5px;
+            }
+            .arrowForward {
+                @include display;
+                @include icons-sprite(Next-Arrow);
+                left: -5px;
+            }
+        }
+    }
+    .NatGeo {
+        @include display;
+        width: 238px;
+        border: 1px solid #ddd;
+        margin: 7px 0 0 0;
+        .NatGeo_Live {
+            @include display;
+            width: 224px;
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 1px solid #ddd;
+            margin: 0 7px;
+        }
+        .NatGeo_img {
+            @include display;
+            background: url(../img/layer-10.png);
+            width: 224px;
+            height: 58px;
+            background-size: 100%;
+            margin: 7px 7px;
+            i {
+                @include display;
+                @include icons-sprite(clock2);
+                margin: 35px 0 0 7px;
+                color: white;
+            }
+            p {
+                @include display;
+                margin: 35px 0 0 7px;
+                color: white;
+                font-size: 10px;
+            }
+        }
+        .NayGeo_text {
+            font-size: 10px;
+            margin: 0 7px 7px 7px;
+        }
+    }
+    .Shopping {
+        @include display;
+        width: 106px;
+        height: 33px;
+        margin: 9px 0 0 0;
+        border: 1px solid #ddd;
+        i {
+            @include display;
+            @include icons-sprite(icon4);
+            margin: 7px 7px;
+        }
+        h1 {
+            @include display;
+            line-height: 33px;
+            color: #ddd;
+            font-size: 11px;
+        }
+    }
+    .Subscriptions {
+        @include display;
+        width: 126px;
+        height: 33px;
+        margin: 9px 0 0 0;
+        border: 1px solid #ddd;
+        i {
+            @include display;
+            @include icons-sprite(icon5);
+            margin: 7px 7px;
+        }
+        h1 {
+            @include display;
+            line-height: 33px;
+            color: #ddd;
+            font-size: 11px;
+        }
+    }
+}

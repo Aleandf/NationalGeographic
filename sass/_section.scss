@@ -1,0 +1,152 @@
+@mixin styleNavLeft3-1 {
+    @include display;
+    width: 75px;
+    height: 75px;
+    border: 1px solid #ddd;
+    margin: 2px 0;
+    float: left;
+    text-align: center;
+    
+
+}
+
+@mixin styleNavLeft3-2 {
+    @include display;
+    margin: 15px 0 5px 0;
+}
+
+.section_nav_left {
+    @include display;
+    width: 165px;
+    font-weight: bold;
+    font-size: 11px;
+    border-right: 1px solid #ddd;
+    margin: 20px 0 0 40px;
+    top: -2px;
+    
+    li {
+        @include display;
+               background-color: white;
+        & :hover {background-color: #777777;border:1px solid #fdcc05; i{border: none;} } }
+    
+   
+        .DailyNews1 { & :hover {i {@include icons-sprite(Daily-News1_hover);}}}
+        .Magazine1 { & :hover {i {@include icons-sprite(Magazine_hover);}}}
+        .Maps1 { & :hover {i {@include icons-sprite(Maps_hover);}}}
+        .Science1 { & :hover {i {@include icons-sprite(Science_hover);}}}
+        .Education1 { & :hover {i {@include icons-sprite(Education_hover);}}}
+        .Games1 { & :hover {i {@include icons-sprite(Games_hover);}}}
+        .Events1 { & :hover {i {@include icons-sprite(Events_hover);}}}
+        .Blogs1 { & :hover {i {@include icons-sprite(Blogs_hover);}}}
+            .Explorers1 { & :hover {i {@include icons-sprite(Explorers_hover);}}}
+            .Trips1 { & :hover {i {@include icons-sprite(Trips_hover);}}}
+   
+        
+
+    .DailyNews {
+        @include styleNavLeft3-1;
+        i {
+            @include styleNavLeft3-2;
+            @include icons-sprite(Daily-News1);
+            margin-bottom: 9px;
+        }
+        
+    }
+    .Magazine {
+        @include styleNavLeft3-1;
+        i {
+            @include styleNavLeft3-2;
+            @include icons-sprite(Magazine);
+        }
+        & :hover {i {@include icons-sprite(Magazine_hover);}}
+    }
+    .Maps {
+        @include styleNavLeft3-1;
+        i {
+            @include styleNavLeft3-2;
+            @include icons-sprite(Maps);
+        }
+    }
+    .Science {
+        @include styleNavLeft3-1;
+        i {
+            @include styleNavLeft3-2;
+            @include icons-sprite(Science);
+        }
+    }
+    .Education {
+        @include styleNavLeft3-1;
+        i {
+            @include styleNavLeft3-2;
+            @include icons-sprite(Education);
+            margin-bottom: 7px;
+        }
+    }
+    .Games {
+        @include styleNavLeft3-1;
+        i {
+            @include styleNavLeft3-2;
+            @include icons-sprite(Games);
+        }
+    }
+    .Events {
+        @include styleNavLeft3-1;
+        i {
+            @include styleNavLeft3-2;
+            @include icons-sprite(Events);
+        }
+    }
+    .Blogs {
+        @include styleNavLeft3-1;
+        i {
+            @include styleNavLeft3-2;
+            @include icons-sprite(Blogs);
+        }
+    }
+    .Explorers {
+        @include styleNavLeft3-1;
+        i {
+            @include styleNavLeft3-2;
+            @include icons-sprite(Explorers);
+        }
+    }
+    .Trips {
+        @include styleNavLeft3-1;
+        i {
+            @include styleNavLeft3-2;
+            @include icons-sprite(Trips);
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.section_info_block{@include display;width: 500px; margin:20px 0 0 5px;}
+.wrapper .active {
+    color: #fdcc05;
+border-bottom: 1px solid #fff;
+background: #fff;
+}
+
+.tabs{
+    margin-left: 1em;
+    @include display;
+}
+
+.tab{
+    @include display;
+    cursor:pointer;
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 7px 10px;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 2;
+    background: #eee;
+}
+
+.tab_item{
+    @include display;
+    border: 1px solid #ddd;
+    padding: 0 1em;
+    img {width: 476px;}
+}

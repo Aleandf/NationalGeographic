@@ -1,0 +1,340 @@
+.header_logo {
+    @include display;
+    margin: 40px 0 0 40px;
+}
+
+.header_searchForm {
+    @include display;
+    width: 435px;
+    height: 50px;
+    box-shadow: 0px 0px 1px 0.00px rgba(0, 0, 0, 0.3);
+    margin: 40px 0 0 150px;
+    .header_searchIcon {
+        @include display;
+        margin: 15px 0 0 10px;
+        i {
+            @include display;
+            @include icons-sprite(Search-Icon);
+        }
+    }
+    .header_search {
+        @include display;
+        width: 210px;
+        height: 25px;
+        margin: 15px 0 0 0;
+        input {
+            padding: 0 10px;
+            border: none;
+            outline: none;
+            -webkit-appearance: none;
+            width: 95%;
+            height: 95%;
+        }
+    }      
+
+    .header_searchGo {
+        @include display;
+        float:right;
+        margin-right: 9px;
+        i {
+            @include display;
+            @include icons-sprite(Go);
+            margin: 15px 0 0 12px;
+        }
+    }
+
+}
+
+.header_registration {
+    @include display;
+    width: 160px;
+    height: 50px;
+    box-shadow: 0px 0px 1px 0.00px rgba(0, 0, 0, 0.3);
+    margin: 40px 0 0 25px;
+    
+    .header_regSingUp {
+        @include display;
+        width: 76px;
+        height: 48px;
+        i {
+            @include display;
+            @include icons-sprite(Sing-Up-Icon);
+            margin: 10px 0 0 30px;
+        }
+        p { margin: 3px 0 0 15px;}
+        & :hover {i {@include icons-sprite(Sing-Up-Icon_hover);}}
+    }
+    .separator {
+        @include display;
+        width: 1px;
+        height: 25px;
+        margin: 13px 0 0 0;
+        background-color: #dedede;
+    }
+    .header_regLogin {
+        @include display;
+        width: 76px;
+        height: 48px;
+        float: right;
+        i {
+            @include display;
+            @include icons-sprite(Login-Icon);
+            margin: 10px 0 0 30px;
+        }
+        p {
+            margin: 3px 0 0 22px;
+        }
+        & :hover {i {@include icons-sprite(Login-Icon_hover);}}
+    }
+}
+
+@mixin styleHeaderNav {
+    @include display;
+    left: 50%;
+    bottom: 35px;
+    background-color: white;
+    border: 5px solid white;
+}
+
+.header_nav {
+    @include display;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 60px 0 0 0;
+    hr {
+        border: none;
+        background-color: #777777;
+        height: 5px;
+        width: 939px;
+        margin: 0 40px;
+    }
+    li {
+        @include display;
+    }
+    .home {
+        @include display;
+        padding: 10px 8px 0 38px;
+        i {
+            @include styleHeaderNav;
+            @include icons-sprite(Home);
+        }
+        & :hover {i {@include icons-sprite(Home_hover);}}
+    }
+    .Photography {
+        @include display;
+        padding: 10px 8px 0 8px;
+        i {
+            @include styleHeaderNav;
+            @include icons-sprite(Photography);
+            bottom: 32px;
+        }
+       & :hover {i {@include icons-sprite(Photography_hover);}} 
+    }
+    .Video {
+        @include display;
+        padding: 10px 8px 0 8px;
+        i {
+            @include styleHeaderNav;
+            @include icons-sprite(Video);
+            bottom: 29px;
+        }
+        & :hover {i {@include icons-sprite(Video_hover);}}
+    }
+    .Environment {
+        @include display;
+        padding: 10px 8px 0 8px;
+        i {
+            @include styleHeaderNav;
+            @include icons-sprite(Environment);
+            bottom: 32px;
+        }
+        & :hover {i {@include icons-sprite(Environment_hover);}}
+    }
+    .Travel {
+        @include display;
+        padding: 10px 8px 0 8px;
+        i {
+            @include styleHeaderNav;
+            @include icons-sprite(Travel);
+            bottom: 30px;
+        }
+        & :hover {i {@include icons-sprite(Travel_hover);}}
+    }
+    .Adventure {
+        @include display;
+        padding: 10px 8px 0 8px;
+        i {
+            @include styleHeaderNav;
+            @include icons-sprite(Adventure);
+        }
+        & :hover {i {@include icons-sprite(Adventure_hover);}}
+    }
+    .Television {
+        @include display;
+        padding: 10px 8px 0 8px;
+        i {
+            @include styleHeaderNav;
+            @include icons-sprite(TV);
+            bottom: 37px;
+        }
+        & :hover {i {@include icons-sprite(TV_hover);}}
+    }
+    .Kids {
+        @include display;
+        padding: 10px 8px 0 8px;
+        i {
+            @include styleHeaderNav;
+            @include icons-sprite(Kids);
+        }
+        & :hover {i {@include icons-sprite(Kids_hover);}}
+    }
+}
+
+
+/* Слайдер */
+.slides {
+    height:330px;
+    margin:0 0 0 40px;
+    overflow:hidden;
+    position:relative;
+    width:940px;
+}
+.slides ul {
+    list-style:none;
+    position:relative;
+}
+
+/* Кадры анимации #anim_slides */
+@-webkit-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@-moz-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+.slides ul li {
+    opacity:0;
+    position:absolute;
+    top:0;
+
+    /* анимация css3 */
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+/* Задержки css3 */
+.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
+    -webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
+}
+.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
+    -webkit-animation-delay: 12.0s;
+    -moz-animation-delay: 12.0s;
+}
+.slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
+    -webkit-animation-delay: 18.0s;
+    -moz-animation-delay: 18.0s;
+}
+.slides ul li img {
+    display:block;
+}
+
+/* Кадры анимации #anim_titles */
+@-webkit-keyframes anim_titles {
+    0% {
+        left:100%;
+        opacity:0;
+    }
+    5% {
+        left:10%;
+        opacity:1;
+    }
+    20% {
+        left:10%;
+        opacity:1;
+    }
+    25% {
+        left:100%;
+        opacity:0;
+    }
+    100% {
+        left:100%;
+        opacity:0;
+    }
+}
+@-moz-keyframes anim_titles {
+    0% {
+        left:100%;
+        opacity:0;
+    }
+    5% {
+        left:10%;
+        opacity:1;
+    }
+    20% {
+        left:10%;
+        opacity:1;
+    }
+    25% {
+        left:100%;
+        opacity:0;
+    }
+    100% {
+        left:100%;
+        opacity:0;
+    }
+}
+
+.slides ul li div {
+    color:black; 
+text-shadow: 2px 2px #888888;
+    font-size:28px;
+    right:10px;
+    position:absolute;
+    bottom:10px;
+    width:200px;
+
+}

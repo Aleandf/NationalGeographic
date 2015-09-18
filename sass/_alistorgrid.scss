@@ -1,0 +1,170 @@
+.section_info_block2 {
+        @include display;
+        width: 327px;
+        border: 1px solid #ddd;
+        margin: 7px 0 0 4px;
+    
+        .section_info_block2_in{
+            @include display;
+            width: 319px;
+            margin: 3px;
+            border: 1px solid #ddd;
+
+            .section_info_block2_img{
+                @include display;
+                width: 315px;
+                text-align: center;
+                
+            }
+            .section_info_block2_title{
+                @include display;
+                width: 214px;
+                margin-left: 10px;
+
+                p {
+                    font-size: 10px;
+                }
+            }
+            .section_info_block2_votes{
+                @include display;
+                width: 85px;
+
+                i {
+                    @include display;
+                    @include icons-sprite(Star);
+                }
+                i1 {
+                    @include display;
+                    @include icons-sprite(Star1);
+                }
+                i2 {
+                    @include display;
+                    @include icons-sprite(Star2);
+                }
+                i3 {
+                    @include display;
+                    @include icons-sprite(Star3);
+                }
+                i4 {
+                    @include display;
+                    @include icons-sprite(Empty-Star);
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+        .section_info_block2_text{
+            @include display;
+            width: 309px;
+            p {
+                margin: 5px 9px;
+                font-size: 10px;
+                text-align: justify;
+            }
+        }  
+    }
+    
+/* Основной контейнер */
+.cbp-vm-switcher {
+    @include display;
+    width: 673px;
+    margin: 9px 0 0 40px;
+    padding-bottom: 12px;
+    border: 1px solid #ddd;
+    .latestNews {
+position: absolute;
+        line-height: 30px;
+        i {
+            @include display;
+            @include icons-sprite(clock);
+margin: 8px 9px 0 9px;
+        }
+    }
+}
+
+/* контейнер выбора опции */
+.cbp-vm-options {
+    text-align: right;
+    height: 30px;
+    line-height: 27px;
+    vertical-align: middle;
+    padding-right: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cbp-vm-options a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #d0d0d0;
+    margin: 2px;
+}
+
+.cbp-vm-options a:hover,
+.cbp-vm-options a.cbp-vm-selected {
+    color: #fdcc05;
+}
+
+.cbp-vm-options a:before {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Основные стили для переключения между режимами */
+
+.cbp-vm-switcher ul {
+    @include display;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+/* Отображение сеткой */
+
+.cbp-vm-view-grid ul li {
+@include display;
+}
+
+
+/* Отображение списком */
+.cbp-vm-view-list li {
+    white-space: nowrap;
+    @include display;
+    width: 350px;
+}
+
+.cbp-vm-view-list .cbp-vm-image,
+.cbp-vm-view-list .cbp-vm-title,
+.cbp-vm-view-list .cbp-vm-details,
+.cbp-vm-view-list .cbp-vm-price,
+.cbp-vm-view-list .cbp-vm-add {
+   @include display;
+
+    
+}
+
+.cbp-vm-view-list .cbp-vm-title {
+    white-space: normal;
+    @include display;
+    
+
+}
+
+.cbp-vm-view-list .cbp-vm-price {
+    left: -310px;
+    top:30px;
+}
+
+.cbp-vm-view-list .cbp-vm-details {
+
+    overflow: hidden;
+    white-space: normal;
+    @include display;
+}

@@ -1,0 +1,73 @@
+@import "compass/typography/links/link-colors";
+a {
+    @include link-colors(#777777, #fdcc05);
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+$icons-sprite-dimensions:true;
+@mixin display {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+body {
+    font-family: "Arial", "Tahoma", sans-serif;
+    color: #545454;
+    font-size: 12px;
+    line-height: 1.4;
+    -webkit-font-smothing: antialiased;
+    background-color: #f2f2f2;
+    background: linear-gradient(to top, #f2f2f2, #7e7b6e);
+}
+
+.header,
+.content,
+.footer {
+    width: 100%;
+}
+
+.header_in,
+.content_in,
+.footer_in {
+    width: 1020px;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.section_in {
+    @include display;
+    width: 725px;
+}
+
+.aside_in {
+    @include display;
+    width: 239px;
+    border-left: 1px solid #ddd;
+    margin-top: 20px;
+    padding-left: 9px;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    @include display; vertical-align: middle;
+    font-size: 12px;
+    font-weight: 600;
+    color: #545454;
+    &:hover {color:#fdcc05;}
+}
+
+h2 {
+    @extend h1;
+    font-size: 14px;
+}

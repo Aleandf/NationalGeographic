@@ -1,0 +1,372 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+a { color: #777777; text-decoration: none; }
+a:hover { color: #fdcc05; }
+a:hover { text-decoration: none; }
+
+.icons-sprite, .header_searchForm .header_searchIcon i, .header_searchForm .header_searchGo i, .header_registration .header_regSingUp i, .header_registration .header_regSingUp :hover i, .header_registration .header_regLogin i, .header_registration .header_regLogin :hover i, .header_nav .home i, .header_nav .home :hover i, .header_nav .Photography i, .header_nav .Photography :hover i, .header_nav .Video i, .header_nav .Video :hover i, .header_nav .Environment i, .header_nav .Environment :hover i, .header_nav .Travel i, .header_nav .Travel :hover i, .header_nav .Adventure i, .header_nav .Adventure :hover i, .header_nav .Television i, .header_nav .Television :hover i, .header_nav .Kids i, .header_nav .Kids :hover i, .section_nav_left .DailyNews1 :hover i, .section_nav_left .Magazine1 :hover i, .section_nav_left .Maps1 :hover i, .section_nav_left .Science1 :hover i, .section_nav_left .Education1 :hover i, .section_nav_left .Games1 :hover i, .section_nav_left .Events1 :hover i, .section_nav_left .Blogs1 :hover i, .section_nav_left .Explorers1 :hover i, .section_nav_left .Trips1 :hover i, .section_nav_left .DailyNews i, .section_nav_left .Magazine i, .section_nav_left .Magazine :hover i, .section_nav_left .Maps i, .section_nav_left .Science i, .section_nav_left .Education i, .section_nav_left .Games i, .section_nav_left .Events i, .section_nav_left .Blogs i, .section_nav_left .Explorers i, .section_nav_left .Trips i, .section_info_block2 .section_info_block2_in .section_info_block2_votes i, .section_info_block2 .section_info_block2_in .section_info_block2_votes i1, .section_info_block2 .section_info_block2_in .section_info_block2_votes i2, .section_info_block2 .section_info_block2_in .section_info_block2_votes i3, .section_info_block2 .section_info_block2_in .section_info_block2_votes i4, .cbp-vm-switcher .latestNews i, .aside_in .mostPopularNews i, .aside_in .aside_info_block3_in .aside_info_block3_votes i, .aside_in .aside_info_block3_in .aside_info_block3_votes i1, .aside_in .aside_info_block3_in .aside_info_block3_votes i2, .aside_in .aside_info_block3_in .aside_info_block3_votes i3, .aside_in .aside_info_block3_in .aside_info_block3_votes i4, .aside_in .mostPopularVideos i, .aside_in .upcomingEvents i, .aside_in .upcomingEvents .upcomingEvents_arrow .arrowAgo, .aside_in .upcomingEvents .upcomingEvents_arrow .arrowForward, .aside_in .NatGeo .NatGeo_img i, .aside_in .Shopping i, .aside_in .Subscriptions i, .NGM i, .NGM .NGM_arrow .arrowAgo, .NGM .NGM_arrow .arrowForward, .footer_info_block .footer_votSub .footer_info_block_votes i, .footer_info_block .footer_votSub .footer_info_block_votes i1, .footer_info_block .footer_votSub .footer_info_block_votes i2, .footer_info_block .footer_votSub .footer_info_block_votes i3, .footer_info_block .footer_votSub .footer_info_block_votes i4, .footer_info_block .footer_votSub .footer_info_block_Subscribe i, .footer_info_block2 .footer_votSub2 .footer_info_block_votes2 i, .footer_info_block2 .footer_votSub2 .footer_info_block_votes2 i1, .footer_info_block2 .footer_votSub2 .footer_info_block_votes2 i2, .footer_info_block2 .footer_votSub2 .footer_info_block_votes2 i3, .footer_info_block2 .footer_votSub2 .footer_info_block_votes2 i4, .footer_info_block2 .footer_votSub2 .footer_info_block_Subscribe2 i, .footer_info_block3 .footer_votSub3 .footer_info_block_votes3 i, .footer_info_block3 .footer_votSub3 .footer_info_block_votes3 i1, .footer_info_block3 .footer_votSub3 .footer_info_block_votes3 i2, .footer_info_block3 .footer_votSub3 .footer_info_block_votes3 i3, .footer_info_block3 .footer_votSub3 .footer_info_block_votes3 i4, .footer_info_block3 .footer_votSub3 .footer_info_block_Subscribe3 i, .footer_info_block4 .footer_votSub4 .footer_info_block_votes4 i, .footer_info_block4 .footer_votSub4 .footer_info_block_votes4 i1, .footer_info_block4 .footer_votSub4 .footer_info_block_votes4 i2, .footer_info_block4 .footer_votSub4 .footer_info_block_votes4 i3, .footer_info_block4 .footer_votSub4 .footer_info_block_votes4 i4, .footer_info_block4 .footer_votSub4 .footer_info_block_Subscribe4 i, .footer_contact .social .social_fb, .footer_contact .social .social_tw, .footer_contact .social .social_yt { background-image: url('../img/icons-sbad896a986.png'); background-repeat: no-repeat; }
+
+body { font-family: "Arial", "Tahoma", sans-serif; color: #545454; font-size: 12px; line-height: 1.4; -webkit-font-smothing: antialiased; background-color: #f2f2f2; background: linear-gradient(to top, #f2f2f2, #7e7b6e); }
+
+.header, .content, .footer { width: 100%; }
+
+.header_in, .content_in, .footer_in { width: 1020px; margin: 0 auto; background-color: #fdfdfd; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+
+.section_in { display: inline-block; vertical-align: top; position: relative; width: 725px; }
+
+.aside_in { display: inline-block; vertical-align: top; position: relative; width: 239px; border-left: 1px solid #ddd; margin-top: 20px; padding-left: 9px; }
+
+ul { list-style: none; }
+
+h1, h2 { display: inline-block; vertical-align: top; position: relative; vertical-align: middle; font-size: 12px; font-weight: 600; color: #545454; }
+h1:hover, h2:hover { color: #fdcc05; }
+
+h2 { font-size: 14px; }
+
+.header_logo { display: inline-block; vertical-align: top; position: relative; margin: 40px 0 0 40px; }
+
+.header_searchForm { display: inline-block; vertical-align: top; position: relative; width: 435px; height: 50px; box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3); margin: 40px 0 0 150px; }
+.header_searchForm .header_searchIcon { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 0 10px; }
+.header_searchForm .header_searchIcon i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1100px; height: 21px; width: 21px; }
+.header_searchForm .header_search { display: inline-block; vertical-align: top; position: relative; width: 210px; height: 25px; margin: 15px 0 0 0; }
+.header_searchForm .header_search input { padding: 0 10px; border: none; outline: none; -webkit-appearance: none; width: 95%; height: 95%; }
+.header_searchForm .header_searchGo { display: inline-block; vertical-align: top; position: relative; float: right; margin-right: 9px; }
+.header_searchForm .header_searchGo i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -458px; height: 22px; width: 22px; margin: 15px 0 0 12px; }
+.header_searchForm .header_searchGo i:hover, .header_searchForm .header_searchGo i.Go-hover { background-position: 0 -480px; }
+
+.header_registration { display: inline-block; vertical-align: top; position: relative; width: 160px; height: 50px; box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3); margin: 40px 0 0 25px; }
+.header_registration .header_regSingUp { display: inline-block; vertical-align: top; position: relative; width: 76px; height: 48px; }
+.header_registration .header_regSingUp i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1121px; height: 16px; width: 16px; margin: 10px 0 0 30px; }
+.header_registration .header_regSingUp i:hover, .header_registration .header_regSingUp i.Sing-Up-Icon-hover { background-position: 0 -1137px; }
+.header_registration .header_regSingUp p { margin: 3px 0 0 15px; }
+.header_registration .header_regSingUp :hover i { background-position: 0 -1137px; height: 16px; width: 16px; }
+.header_registration .separator { display: inline-block; vertical-align: top; position: relative; width: 1px; height: 25px; margin: 13px 0 0 0; background-color: #dedede; }
+.header_registration .header_regLogin { display: inline-block; vertical-align: top; position: relative; width: 76px; height: 48px; float: right; }
+.header_registration .header_regLogin i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -741px; height: 16px; width: 14px; margin: 10px 0 0 30px; }
+.header_registration .header_regLogin i:hover, .header_registration .header_regLogin i.Login-Icon-hover { background-position: 0 -757px; }
+.header_registration .header_regLogin p { margin: 3px 0 0 22px; }
+.header_registration .header_regLogin :hover i { background-position: 0 -757px; height: 16px; width: 14px; }
+
+.header_nav { display: inline-block; vertical-align: top; position: relative; font-weight: bold; font-size: 14px; margin: 60px 0 0 0; }
+.header_nav hr { border: none; background-color: #777777; height: 5px; width: 939px; margin: 0 40px; }
+.header_nav li { display: inline-block; vertical-align: top; position: relative; }
+.header_nav .home { display: inline-block; vertical-align: top; position: relative; padding: 10px 8px 0 38px; }
+.header_nav .home i { display: inline-block; vertical-align: top; position: relative; left: 50%; bottom: 35px; background-color: white; border: 5px solid white; background-position: 0 -502px; height: 24px; width: 26px; }
+.header_nav .home i:hover, .header_nav .home i.Home-hover { background-position: 0 -526px; }
+.header_nav .home :hover i { background-position: 0 -526px; height: 24px; width: 26px; }
+.header_nav .Photography { display: inline-block; vertical-align: top; position: relative; padding: 10px 8px 0 8px; }
+.header_nav .Photography i { display: inline-block; vertical-align: top; position: relative; left: 50%; bottom: 35px; background-color: white; border: 5px solid white; background-position: 0 -934px; height: 18px; width: 26px; bottom: 32px; }
+.header_nav .Photography i:hover, .header_nav .Photography i.Photography-hover { background-position: 0 -952px; }
+.header_nav .Photography :hover i { background-position: 0 -952px; height: 18px; width: 26px; }
+.header_nav .Video { display: inline-block; vertical-align: top; position: relative; padding: 10px 8px 0 8px; }
+.header_nav .Video i { display: inline-block; vertical-align: top; position: relative; left: 50%; bottom: 35px; background-color: white; border: 5px solid white; background-position: 0 -1391px; height: 14px; width: 26px; bottom: 29px; }
+.header_nav .Video i:hover, .header_nav .Video i.Video-hover { background-position: 0 -1405px; }
+.header_nav .Video :hover i { background-position: 0 -1405px; height: 14px; width: 26px; }
+.header_nav .Environment { display: inline-block; vertical-align: top; position: relative; padding: 10px 8px 0 8px; }
+.header_nav .Environment i { display: inline-block; vertical-align: top; position: relative; left: 50%; bottom: 35px; background-color: white; border: 5px solid white; background-position: 0 -204px; height: 25px; width: 25px; bottom: 32px; }
+.header_nav .Environment i:hover, .header_nav .Environment i.Environment-hover { background-position: 0 -229px; }
+.header_nav .Environment :hover i { background-position: 0 -229px; height: 25px; width: 25px; }
+.header_nav .Travel { display: inline-block; vertical-align: top; position: relative; padding: 10px 8px 0 8px; }
+.header_nav .Travel i { display: inline-block; vertical-align: top; position: relative; left: 50%; bottom: 35px; background-color: white; border: 5px solid white; background-position: 0 -1265px; height: 17px; width: 26px; bottom: 30px; }
+.header_nav .Travel i:hover, .header_nav .Travel i.Travel-hover { background-position: 0 -1282px; }
+.header_nav .Travel :hover i { background-position: 0 -1282px; height: 17px; width: 26px; }
+.header_nav .Adventure { display: inline-block; vertical-align: top; position: relative; padding: 10px 8px 0 8px; }
+.header_nav .Adventure i { display: inline-block; vertical-align: top; position: relative; left: 50%; bottom: 35px; background-color: white; border: 5px solid white; background-position: 0 0; height: 25px; width: 26px; }
+.header_nav .Adventure i:hover, .header_nav .Adventure i.Adventure-hover { background-position: 0 -25px; }
+.header_nav .Adventure :hover i { background-position: 0 -25px; height: 25px; width: 26px; }
+.header_nav .Television { display: inline-block; vertical-align: top; position: relative; padding: 10px 8px 0 8px; }
+.header_nav .Television i { display: inline-block; vertical-align: top; position: relative; left: 50%; bottom: 35px; background-color: white; border: 5px solid white; background-position: 0 -1213px; height: 26px; width: 26px; bottom: 37px; }
+.header_nav .Television i:hover, .header_nav .Television i.TV-hover { background-position: 0 -1239px; }
+.header_nav .Television :hover i { background-position: 0 -1239px; height: 26px; width: 26px; }
+.header_nav .Kids { display: inline-block; vertical-align: top; position: relative; padding: 10px 8px 0 8px; }
+.header_nav .Kids i { display: inline-block; vertical-align: top; position: relative; left: 50%; bottom: 35px; background-color: white; border: 5px solid white; background-position: 0 -683px; height: 29px; width: 21px; }
+.header_nav .Kids i:hover, .header_nav .Kids i.Kids-hover { background-position: 0 -712px; }
+.header_nav .Kids :hover i { background-position: 0 -712px; height: 29px; width: 21px; }
+
+/* ╨б╨╗╨░╨╣╨┤╨╡╤А */
+.slides { height: 330px; margin: 0 0 0 40px; overflow: hidden; position: relative; width: 940px; }
+
+.slides ul { list-style: none; position: relative; }
+
+/* ╨Ъ╨░╨┤╤А╤Л ╨░╨╜╨╕╨╝╨░╤Ж╨╕╨╕ #anim_slides */
+@-webkit-keyframes anim_slides { 0% { opacity: 0; }
+  6% { opacity: 1; }
+  24% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; } }
+@-moz-keyframes anim_slides { 0% { opacity: 0; }
+  6% { opacity: 1; }
+  24% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; } }
+.slides ul li { opacity: 0; position: absolute; top: 0; /* ╨░╨╜╨╕╨╝╨░╤Ж╨╕╤П css3 */ -webkit-animation-name: anim_slides; -webkit-animation-duration: 24.0s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; -webkit-animation-direction: normal; -webkit-animation-delay: 0; -webkit-animation-play-state: running; -webkit-animation-fill-mode: forwards; -moz-animation-name: anim_slides; -moz-animation-duration: 24.0s; -moz-animation-timing-function: linear; -moz-animation-iteration-count: infinite; -moz-animation-direction: normal; -moz-animation-delay: 0; -moz-animation-play-state: running; -moz-animation-fill-mode: forwards; }
+
+/* ╨Ч╨░╨┤╨╡╤А╨╢╨║╨╕ css3 */
+.slides ul li:nth-child(2), .slides ul li:nth-child(2) div { -webkit-animation-delay: 6.0s; -moz-animation-delay: 6.0s; }
+
+.slides ul li:nth-child(3), .slides ul li:nth-child(3) div { -webkit-animation-delay: 12.0s; -moz-animation-delay: 12.0s; }
+
+.slides ul li:nth-child(4), .slides ul li:nth-child(4) div { -webkit-animation-delay: 18.0s; -moz-animation-delay: 18.0s; }
+
+.slides ul li img { display: block; }
+
+/* ╨Ъ╨░╨┤╤А╤Л ╨░╨╜╨╕╨╝╨░╤Ж╨╕╨╕ #anim_titles */
+@-webkit-keyframes anim_titles { 0% { left: 100%; opacity: 0; }
+  5% { left: 10%; opacity: 1; }
+  20% { left: 10%; opacity: 1; }
+  25% { left: 100%; opacity: 0; }
+  100% { left: 100%; opacity: 0; } }
+@-moz-keyframes anim_titles { 0% { left: 100%; opacity: 0; }
+  5% { left: 10%; opacity: 1; }
+  20% { left: 10%; opacity: 1; }
+  25% { left: 100%; opacity: 0; }
+  100% { left: 100%; opacity: 0; } }
+.slides ul li div { color: black; text-shadow: 2px 2px #888888; font-size: 28px; right: 10px; position: absolute; bottom: 10px; width: 200px; }
+
+.section_nav_left { display: inline-block; vertical-align: top; position: relative; width: 165px; font-weight: bold; font-size: 11px; border-right: 1px solid #ddd; margin: 20px 0 0 40px; top: -2px; }
+.section_nav_left li { display: inline-block; vertical-align: top; position: relative; background-color: white; }
+.section_nav_left li :hover { background-color: #777777; border: 1px solid #fdcc05; }
+.section_nav_left li :hover i { border: none; }
+.section_nav_left .DailyNews1 :hover i { background-position: 0 -124px; height: 22px; width: 26px; }
+.section_nav_left .Magazine1 :hover i { background-position: 0 -814px; height: 26px; width: 26px; }
+.section_nav_left .Maps1 :hover i { background-position: 0 -866px; height: 26px; width: 26px; }
+.section_nav_left .Science1 :hover i { background-position: 0 -1074px; height: 26px; width: 23px; }
+.section_nav_left .Education1 :hover i { background-position: 0 -169px; height: 23px; width: 32px; }
+.section_nav_left .Games1 :hover i { background-position: 0 -433px; height: 25px; width: 26px; }
+.section_nav_left .Events1 :hover i { background-position: 0 -280px; height: 26px; width: 26px; }
+.section_nav_left .Blogs1 :hover i { background-position: 0 -76px; height: 26px; width: 26px; }
+.section_nav_left .Explorers1 :hover i { background-position: 0 -332px; height: 26px; width: 19px; }
+.section_nav_left .Trips1 :hover i { background-position: 0 -1320px; height: 21px; width: 26px; }
+.section_nav_left .DailyNews { display: inline-block; vertical-align: top; position: relative; width: 75px; height: 75px; border: 1px solid #ddd; margin: 2px 0; float: left; text-align: center; }
+.section_nav_left .DailyNews i { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 5px 0; background-position: 0 -102px; height: 22px; width: 26px; margin-bottom: 9px; }
+.section_nav_left .DailyNews i:hover, .section_nav_left .DailyNews i.Daily-News1-hover { background-position: 0 -124px; }
+.section_nav_left .Magazine { display: inline-block; vertical-align: top; position: relative; width: 75px; height: 75px; border: 1px solid #ddd; margin: 2px 0; float: left; text-align: center; }
+.section_nav_left .Magazine i { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 5px 0; background-position: 0 -773px; height: 26px; width: 26px; }
+.section_nav_left .Magazine i:hover, .section_nav_left .Magazine i.Magazine-hover { background-position: 0 -814px; }
+.section_nav_left .Magazine :hover i { background-position: 0 -814px; height: 26px; width: 26px; }
+.section_nav_left .Maps { display: inline-block; vertical-align: top; position: relative; width: 75px; height: 75px; border: 1px solid #ddd; margin: 2px 0; float: left; text-align: center; }
+.section_nav_left .Maps i { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 5px 0; background-position: 0 -840px; height: 26px; width: 26px; }
+.section_nav_left .Maps i:hover, .section_nav_left .Maps i.Maps-hover { background-position: 0 -866px; }
+.section_nav_left .Science { display: inline-block; vertical-align: top; position: relative; width: 75px; height: 75px; border: 1px solid #ddd; margin: 2px 0; float: left; text-align: center; }
+.section_nav_left .Science i { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 5px 0; background-position: 0 -1048px; height: 26px; width: 23px; }
+.section_nav_left .Science i:hover, .section_nav_left .Science i.Science-hover { background-position: 0 -1074px; }
+.section_nav_left .Education { display: inline-block; vertical-align: top; position: relative; width: 75px; height: 75px; border: 1px solid #ddd; margin: 2px 0; float: left; text-align: center; }
+.section_nav_left .Education i { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 5px 0; background-position: 0 -146px; height: 23px; width: 32px; margin-bottom: 7px; }
+.section_nav_left .Education i:hover, .section_nav_left .Education i.Education-hover { background-position: 0 -169px; }
+.section_nav_left .Games { display: inline-block; vertical-align: top; position: relative; width: 75px; height: 75px; border: 1px solid #ddd; margin: 2px 0; float: left; text-align: center; }
+.section_nav_left .Games i { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 5px 0; background-position: 0 -408px; height: 25px; width: 26px; }
+.section_nav_left .Games i:hover, .section_nav_left .Games i.Games-hover { background-position: 0 -433px; }
+.section_nav_left .Events { display: inline-block; vertical-align: top; position: relative; width: 75px; height: 75px; border: 1px solid #ddd; margin: 2px 0; float: left; text-align: center; }
+.section_nav_left .Events i { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 5px 0; background-position: 0 -254px; height: 26px; width: 26px; }
+.section_nav_left .Events i:hover, .section_nav_left .Events i.Events-hover { background-position: 0 -280px; }
+.section_nav_left .Blogs { display: inline-block; vertical-align: top; position: relative; width: 75px; height: 75px; border: 1px solid #ddd; margin: 2px 0; float: left; text-align: center; }
+.section_nav_left .Blogs i { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 5px 0; background-position: 0 -50px; height: 26px; width: 26px; }
+.section_nav_left .Blogs i:hover, .section_nav_left .Blogs i.Blogs-hover { background-position: 0 -76px; }
+.section_nav_left .Explorers { display: inline-block; vertical-align: top; position: relative; width: 75px; height: 75px; border: 1px solid #ddd; margin: 2px 0; float: left; text-align: center; }
+.section_nav_left .Explorers i { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 5px 0; background-position: 0 -306px; height: 26px; width: 19px; }
+.section_nav_left .Explorers i:hover, .section_nav_left .Explorers i.Explorers-hover { background-position: 0 -332px; }
+.section_nav_left .Trips { display: inline-block; vertical-align: top; position: relative; width: 75px; height: 75px; border: 1px solid #ddd; margin: 2px 0; float: left; text-align: center; }
+.section_nav_left .Trips i { display: inline-block; vertical-align: top; position: relative; margin: 15px 0 5px 0; background-position: 0 -1299px; height: 21px; width: 26px; margin-bottom: 10px; }
+.section_nav_left .Trips i:hover, .section_nav_left .Trips i.Trips-hover { background-position: 0 -1320px; }
+
+.section_info_block { display: inline-block; vertical-align: top; position: relative; width: 500px; margin: 20px 0 0 5px; }
+
+.wrapper .active { color: #fdcc05; border-bottom: 1px solid #fff; background: #fff; }
+
+.tabs { margin-left: 1em; display: inline-block; vertical-align: top; position: relative; }
+
+.tab { display: inline-block; vertical-align: top; position: relative; cursor: pointer; border: 1px solid #ddd; display: inline-block; padding: 7px 10px; margin-bottom: -1px; position: relative; z-index: 2; background: #eee; }
+
+.tab_item { display: inline-block; vertical-align: top; position: relative; border: 1px solid #ddd; padding: 0 1em; }
+.tab_item img { width: 476px; }
+
+.section_info_block2 { display: inline-block; vertical-align: top; position: relative; width: 327px; border: 1px solid #ddd; margin: 7px 0 0 4px; }
+.section_info_block2 .section_info_block2_in { display: inline-block; vertical-align: top; position: relative; width: 319px; margin: 3px; border: 1px solid #ddd; }
+.section_info_block2 .section_info_block2_in .section_info_block2_img { display: inline-block; vertical-align: top; position: relative; width: 315px; text-align: center; }
+.section_info_block2 .section_info_block2_in .section_info_block2_title { display: inline-block; vertical-align: top; position: relative; width: 214px; margin-left: 10px; }
+.section_info_block2 .section_info_block2_in .section_info_block2_title p { font-size: 10px; }
+.section_info_block2 .section_info_block2_in .section_info_block2_votes { display: inline-block; vertical-align: top; position: relative; width: 85px; }
+.section_info_block2 .section_info_block2_in .section_info_block2_votes i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1153px; height: 12px; width: 13px; }
+.section_info_block2 .section_info_block2_in .section_info_block2_votes i1 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1165px; height: 12px; width: 13px; }
+.section_info_block2 .section_info_block2_in .section_info_block2_votes i2 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1177px; height: 12px; width: 13px; }
+.section_info_block2 .section_info_block2_in .section_info_block2_votes i3 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1189px; height: 12px; width: 13px; }
+.section_info_block2 .section_info_block2_in .section_info_block2_votes i4 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -192px; height: 12px; width: 13px; }
+.section_info_block2 .section_info_block2_in .section_info_block2_votes p { font-size: 10px; }
+.section_info_block2 .section_info_block2_text { display: inline-block; vertical-align: top; position: relative; width: 309px; }
+.section_info_block2 .section_info_block2_text p { margin: 5px 9px; font-size: 10px; text-align: justify; }
+
+/* ╨Ю╤Б╨╜╨╛╨▓╨╜╨╛╨╣ ╨║╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А */
+.cbp-vm-switcher { display: inline-block; vertical-align: top; position: relative; width: 673px; margin: 9px 0 0 40px; padding-bottom: 12px; border: 1px solid #ddd; }
+.cbp-vm-switcher .latestNews { position: absolute; line-height: 30px; }
+.cbp-vm-switcher .latestNews i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1457px; height: 15px; width: 15px; margin: 8px 9px 0 9px; }
+
+/* ╨║╨╛╨╜╤В╨╡╨╣╨╜╨╡╤А ╨▓╤Л╨▒╨╛╤А╨░ ╨╛╨┐╤Ж╨╕╨╕ */
+.cbp-vm-options { text-align: right; height: 30px; line-height: 27px; vertical-align: middle; padding-right: 30px; border-bottom: 1px solid #ddd; }
+
+.cbp-vm-options a { display: inline-block; width: 40px; height: 40px; overflow: hidden; white-space: nowrap; color: #d0d0d0; margin: 2px; }
+
+.cbp-vm-options a:hover, .cbp-vm-options a.cbp-vm-selected { color: #fdcc05; }
+
+.cbp-vm-options a:before { width: 40px; height: 40px; line-height: 40px; font-size: 14px; text-align: center; display: inline-block; }
+
+/* ╨Ю╤Б╨╜╨╛╨▓╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕ ╨┤╨╗╤П ╨┐╨╡╤А╨╡╨║╨╗╤О╤З╨╡╨╜╨╕╤П ╨╝╨╡╨╢╨┤╤Г ╤А╨╡╨╢╨╕╨╝╨░╨╝╨╕ */
+.cbp-vm-switcher ul { display: inline-block; vertical-align: top; position: relative; list-style: none; padding: 0; margin: 0; }
+
+/* ╨Ю╤В╨╛╨▒╤А╨░╨╢╨╡╨╜╨╕╨╡ ╤Б╨╡╤В╨║╨╛╨╣ */
+.cbp-vm-view-grid ul li { display: inline-block; vertical-align: top; position: relative; }
+
+/* ╨Ю╤В╨╛╨▒╤А╨░╨╢╨╡╨╜╨╕╨╡ ╤Б╨┐╨╕╤Б╨║╨╛╨╝ */
+.cbp-vm-view-list li { white-space: nowrap; display: inline-block; vertical-align: top; position: relative; width: 350px; }
+
+.cbp-vm-view-list .cbp-vm-image, .cbp-vm-view-list .cbp-vm-title, .cbp-vm-view-list .cbp-vm-details, .cbp-vm-view-list .cbp-vm-price, .cbp-vm-view-list .cbp-vm-add { display: inline-block; vertical-align: top; position: relative; }
+
+.cbp-vm-view-list .cbp-vm-title { white-space: normal; display: inline-block; vertical-align: top; position: relative; }
+
+.cbp-vm-view-list .cbp-vm-price { left: -310px; top: 30px; }
+
+.cbp-vm-view-list .cbp-vm-details { overflow: hidden; white-space: normal; display: inline-block; vertical-align: top; position: relative; }
+
+.aside_in { width: 249px; }
+.aside_in .mostPopularNews { width: 238px; height: 30px; border: 1px solid #ddd; line-height: 30px; }
+.aside_in .mostPopularNews i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -550px; height: 16px; width: 16px; margin: 8px 9px 0 9px; }
+.aside_in .aside_info_block3_in { display: inline-block; vertical-align: top; position: relative; width: 232px; border: 1px solid #ddd; margin-top: 7px; padding: 3px; }
+.aside_in .aside_info_block3_in .aside_info_block3_img img { display: inline-block; vertical-align: top; position: relative; width: 232px; height: 100px; background-size: 100%; }
+.aside_in .aside_info_block3_in .aside_info_block3_title { display: inline-block; vertical-align: top; position: relative; width: 140px; }
+.aside_in .aside_info_block3_in .aside_info_block3_title h1, .aside_in .aside_info_block3_in .aside_info_block3_title h2 { margin-top: 4px; }
+.aside_in .aside_info_block3_in .aside_info_block3_title p { font-size: 10px; }
+.aside_in .aside_info_block3_in .aside_info_block3_votes { display: inline-block; vertical-align: top; position: relative; width: 85px; margin: 4px 0 0 0; }
+.aside_in .aside_info_block3_in .aside_info_block3_votes i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1153px; height: 12px; width: 13px; }
+.aside_in .aside_info_block3_in .aside_info_block3_votes i1 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1165px; height: 12px; width: 13px; }
+.aside_in .aside_info_block3_in .aside_info_block3_votes i2 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1177px; height: 12px; width: 13px; }
+.aside_in .aside_info_block3_in .aside_info_block3_votes i3 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1189px; height: 12px; width: 13px; }
+.aside_in .aside_info_block3_in .aside_info_block3_votes i4 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1201px; height: 12px; width: 13px; }
+.aside_in .aside_info_block3_in .aside_info_block3_votes p { font-size: 10px; }
+.aside_in .mostPopularVideos { width: 238px; height: 30px; border: 1px solid #ddd; line-height: 30px; margin: 9px 0 0 0; }
+.aside_in .mostPopularVideos i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -566px; height: 12px; width: 16px; margin: 8px 9px 0 9px; }
+.aside_in .video { margin-top: 7px; }
+.aside_in .upcomingEvents { display: inline-block; vertical-align: top; position: relative; width: 238px; height: 30px; border: 1px solid #ddd; line-height: 30px; margin: 9px 0 0 0; }
+.aside_in .upcomingEvents i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -578px; height: 16px; width: 16px; margin: 6px 9px 0 9px; }
+.aside_in .upcomingEvents .upcomingEvents_arrow { display: inline-block; vertical-align: top; position: relative; top: -2px; float: right; color: #ddd; }
+.aside_in .upcomingEvents .upcomingEvents_arrow .arrowAgo { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1006px; height: 21px; width: 21px; right: -5px; }
+.aside_in .upcomingEvents .upcomingEvents_arrow .arrowAgo:hover, .aside_in .upcomingEvents .upcomingEvents_arrow .arrowAgo.Prev-Arrow-hover { background-position: 0 -1027px; }
+.aside_in .upcomingEvents .upcomingEvents_arrow .arrowForward { display: inline-block; vertical-align: top; position: relative; background-position: 0 -892px; height: 21px; width: 21px; left: -5px; }
+.aside_in .upcomingEvents .upcomingEvents_arrow .arrowForward:hover, .aside_in .upcomingEvents .upcomingEvents_arrow .arrowForward.Next-Arrow-hover { background-position: 0 -913px; }
+.aside_in .NatGeo { display: inline-block; vertical-align: top; position: relative; width: 238px; border: 1px solid #ddd; margin: 7px 0 0 0; }
+.aside_in .NatGeo .NatGeo_Live { display: inline-block; vertical-align: top; position: relative; width: 224px; height: 30px; line-height: 30px; border-bottom: 1px solid #ddd; margin: 0 7px; }
+.aside_in .NatGeo .NatGeo_img { display: inline-block; vertical-align: top; position: relative; background: url(../img/layer-10.png); width: 224px; height: 58px; background-size: 100%; margin: 7px 7px; }
+.aside_in .NatGeo .NatGeo_img i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1472px; height: 15px; width: 15px; margin: 35px 0 0 7px; color: white; }
+.aside_in .NatGeo .NatGeo_img p { display: inline-block; vertical-align: top; position: relative; margin: 35px 0 0 7px; color: white; font-size: 10px; }
+.aside_in .NatGeo .NayGeo_text { font-size: 10px; margin: 0 7px 7px 7px; }
+.aside_in .Shopping { display: inline-block; vertical-align: top; position: relative; width: 106px; height: 33px; margin: 9px 0 0 0; border: 1px solid #ddd; }
+.aside_in .Shopping i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -594px; height: 18px; width: 18px; margin: 7px 7px; }
+.aside_in .Shopping i:hover, .aside_in .Shopping i.icon4-hover { background-position: 0 -612px; }
+.aside_in .Shopping h1, .aside_in .Shopping h2 { display: inline-block; vertical-align: top; position: relative; line-height: 33px; color: #ddd; font-size: 11px; }
+.aside_in .Subscriptions { display: inline-block; vertical-align: top; position: relative; width: 126px; height: 33px; margin: 9px 0 0 0; border: 1px solid #ddd; }
+.aside_in .Subscriptions i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -630px; height: 18px; width: 18px; margin: 7px 7px; }
+.aside_in .Subscriptions i:hover, .aside_in .Subscriptions i.icon5-hover { background-position: 0 -648px; }
+.aside_in .Subscriptions h1, .aside_in .Subscriptions h2 { display: inline-block; vertical-align: top; position: relative; line-height: 33px; color: #ddd; font-size: 11px; }
+
+.hr { width: 938px; margin: 0 0 0 40px; border: none; border-bottom: 1px solid #ddd; }
+
+.NGM { display: inline-block; vertical-align: top; position: relative; width: 936px; height: 30px; border: 1px solid #ddd; line-height: 30px; margin: 14px 0 0 40px; }
+.NGM i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -799px; height: 15px; width: 15px; margin: 6px 9px 0 9px; }
+.NGM .NGM_arrow { display: inline-block; vertical-align: top; position: relative; top: -2px; float: right; color: #ddd; }
+.NGM .NGM_arrow .arrowAgo { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1006px; height: 21px; width: 21px; right: -5px; }
+.NGM .NGM_arrow .arrowAgo:hover, .NGM .NGM_arrow .arrowAgo.Prev-Arrow-hover { background-position: 0 -1027px; }
+.NGM .NGM_arrow .arrowForward { display: inline-block; vertical-align: top; position: relative; background-position: 0 -892px; height: 21px; width: 21px; left: -5px; }
+.NGM .NGM_arrow .arrowForward:hover, .NGM .NGM_arrow .arrowForward.Next-Arrow-hover { background-position: 0 -913px; }
+
+.footer_info_block { display: inline-block; vertical-align: top; position: relative; width: 226px; border: 1px solid #ddd; margin: 7px 0 0 40px; }
+.footer_info_block .footer_info_block_in { display: inline-block; vertical-align: top; position: relative; width: 212px; border: 1px solid #ddd; margin: 3px; padding: 3px; text-align: center; }
+.footer_info_block .footer_info_block_in .footer_info_block_img { display: inline-block; vertical-align: top; position: relative; margin: 7px auto; }
+.footer_info_block .footer_info_block_in .footer_info_block_title { display: inline-block; vertical-align: top; position: relative; text-align: center; }
+.footer_info_block .footer_votSub { display: inline-block; vertical-align: top; position: relative; width: 212px; height: 30px; margin: 11px 4px 4px 13px; }
+.footer_info_block .footer_votSub .footer_info_block_votes { display: inline-block; vertical-align: top; position: relative; width: 100px; }
+.footer_info_block .footer_votSub .footer_info_block_votes i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1153px; height: 12px; width: 13px; }
+.footer_info_block .footer_votSub .footer_info_block_votes i1 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1165px; height: 12px; width: 13px; }
+.footer_info_block .footer_votSub .footer_info_block_votes i2 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1177px; height: 12px; width: 13px; }
+.footer_info_block .footer_votSub .footer_info_block_votes i3 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1189px; height: 12px; width: 13px; }
+.footer_info_block .footer_votSub .footer_info_block_votes i4 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1201px; height: 12px; width: 13px; }
+.footer_info_block .footer_votSub .footer_info_block_votes p { font-size: 10px; }
+.footer_info_block .footer_votSub .footer_info_block_Subscribe { display: inline-block; vertical-align: top; position: relative; width: 100px; float: right; border-top: 1px solid #ddd; border-left: 1px solid #ddd; }
+.footer_info_block .footer_votSub .footer_info_block_Subscribe i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -666px; height: 17px; width: 17px; margin: 7px 7px; }
+.footer_info_block .footer_votSub .footer_info_block_Subscribe h1, .footer_info_block .footer_votSub .footer_info_block_Subscribe h2 { display: inline-block; vertical-align: top; position: relative; line-height: 30px; color: #ddd; font-size: 10px; }
+
+.footer_info_block2 { display: inline-block; vertical-align: top; position: relative; width: 226px; border: 1px solid #ddd; margin: 7px 0 0 5px; }
+.footer_info_block2 .footer_info_block_in2 { display: inline-block; vertical-align: top; position: relative; width: 212px; border: 1px solid #ddd; margin: 3px; padding: 3px; text-align: center; }
+.footer_info_block2 .footer_info_block_in2 .footer_info_block_img2 { display: inline-block; vertical-align: top; position: relative; margin: 7px auto; }
+.footer_info_block2 .footer_info_block_in2 .footer_info_block_title2 { display: inline-block; vertical-align: top; position: relative; text-align: center; }
+.footer_info_block2 .footer_votSub2 { display: inline-block; vertical-align: top; position: relative; width: 212px; height: 30px; margin: 11px 4px 4px 13px; }
+.footer_info_block2 .footer_votSub2 .footer_info_block_votes2 { display: inline-block; vertical-align: top; position: relative; width: 100px; }
+.footer_info_block2 .footer_votSub2 .footer_info_block_votes2 i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1153px; height: 12px; width: 13px; }
+.footer_info_block2 .footer_votSub2 .footer_info_block_votes2 i1 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1165px; height: 12px; width: 13px; }
+.footer_info_block2 .footer_votSub2 .footer_info_block_votes2 i2 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1177px; height: 12px; width: 13px; }
+.footer_info_block2 .footer_votSub2 .footer_info_block_votes2 i3 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1189px; height: 12px; width: 13px; }
+.footer_info_block2 .footer_votSub2 .footer_info_block_votes2 i4 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1201px; height: 12px; width: 13px; }
+.footer_info_block2 .footer_votSub2 .footer_info_block_votes2 p { font-size: 10px; }
+.footer_info_block2 .footer_votSub2 .footer_info_block_Subscribe2 { display: inline-block; vertical-align: top; position: relative; width: 100px; float: right; border-top: 1px solid #ddd; border-left: 1px solid #ddd; }
+.footer_info_block2 .footer_votSub2 .footer_info_block_Subscribe2 i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -666px; height: 17px; width: 17px; margin: 7px 7px; }
+.footer_info_block2 .footer_votSub2 .footer_info_block_Subscribe2 h1, .footer_info_block2 .footer_votSub2 .footer_info_block_Subscribe2 h2 { display: inline-block; vertical-align: top; position: relative; line-height: 30px; color: #ddd; font-size: 10px; }
+
+.footer_info_block3 { display: inline-block; vertical-align: top; position: relative; width: 226px; border: 1px solid #ddd; margin: 7px 0 0 5px; }
+.footer_info_block3 .footer_info_block_in3 { display: inline-block; vertical-align: top; position: relative; width: 212px; border: 1px solid #ddd; margin: 3px; padding: 3px; text-align: center; }
+.footer_info_block3 .footer_info_block_in3 .footer_info_block_img3 { display: inline-block; vertical-align: top; position: relative; margin: 7px auto; }
+.footer_info_block3 .footer_info_block_in3 .footer_info_block_title3 { display: inline-block; vertical-align: top; position: relative; text-align: center; }
+.footer_info_block3 .footer_votSub3 { display: inline-block; vertical-align: top; position: relative; width: 212px; height: 30px; margin: 11px 4px 4px 13px; }
+.footer_info_block3 .footer_votSub3 .footer_info_block_votes3 { display: inline-block; vertical-align: top; position: relative; width: 100px; }
+.footer_info_block3 .footer_votSub3 .footer_info_block_votes3 i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1153px; height: 12px; width: 13px; }
+.footer_info_block3 .footer_votSub3 .footer_info_block_votes3 i1 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1165px; height: 12px; width: 13px; }
+.footer_info_block3 .footer_votSub3 .footer_info_block_votes3 i2 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1177px; height: 12px; width: 13px; }
+.footer_info_block3 .footer_votSub3 .footer_info_block_votes3 i3 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1189px; height: 12px; width: 13px; }
+.footer_info_block3 .footer_votSub3 .footer_info_block_votes3 i4 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1201px; height: 12px; width: 13px; }
+.footer_info_block3 .footer_votSub3 .footer_info_block_votes3 p { font-size: 10px; }
+.footer_info_block3 .footer_votSub3 .footer_info_block_Subscribe3 { display: inline-block; vertical-align: top; position: relative; width: 100px; float: right; border-top: 1px solid #ddd; border-left: 1px solid #ddd; }
+.footer_info_block3 .footer_votSub3 .footer_info_block_Subscribe3 i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -666px; height: 17px; width: 17px; margin: 7px 7px; }
+.footer_info_block3 .footer_votSub3 .footer_info_block_Subscribe3 h1, .footer_info_block3 .footer_votSub3 .footer_info_block_Subscribe3 h2 { display: inline-block; vertical-align: top; position: relative; line-height: 30px; color: #ddd; font-size: 10px; }
+
+.footer_info_block4 { display: inline-block; vertical-align: top; position: relative; width: 226px; border: 1px solid #ddd; margin: 7px 0 0 5px; }
+.footer_info_block4 .footer_info_block_in4 { display: inline-block; vertical-align: top; position: relative; width: 212px; border: 1px solid #ddd; margin: 3px; padding: 3px; text-align: center; }
+.footer_info_block4 .footer_info_block_in4 .footer_info_block_img4 { display: inline-block; vertical-align: top; position: relative; margin: 7px auto; }
+.footer_info_block4 .footer_info_block_in4 .footer_info_block_title4 { display: inline-block; vertical-align: top; position: relative; text-align: center; }
+.footer_info_block4 .footer_votSub4 { display: inline-block; vertical-align: top; position: relative; width: 212px; height: 30px; margin: 11px 4px 4px 13px; }
+.footer_info_block4 .footer_votSub4 .footer_info_block_votes4 { display: inline-block; vertical-align: top; position: relative; width: 100px; }
+.footer_info_block4 .footer_votSub4 .footer_info_block_votes4 i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1153px; height: 12px; width: 13px; }
+.footer_info_block4 .footer_votSub4 .footer_info_block_votes4 i1 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1165px; height: 12px; width: 13px; }
+.footer_info_block4 .footer_votSub4 .footer_info_block_votes4 i2 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1177px; height: 12px; width: 13px; }
+.footer_info_block4 .footer_votSub4 .footer_info_block_votes4 i3 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1189px; height: 12px; width: 13px; }
+.footer_info_block4 .footer_votSub4 .footer_info_block_votes4 i4 { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1201px; height: 12px; width: 13px; }
+.footer_info_block4 .footer_votSub4 .footer_info_block_votes4 p { font-size: 10px; }
+.footer_info_block4 .footer_votSub4 .footer_info_block_Subscribe4 { display: inline-block; vertical-align: top; position: relative; width: 100px; float: right; border-top: 1px solid #ddd; border-left: 1px solid #ddd; }
+.footer_info_block4 .footer_votSub4 .footer_info_block_Subscribe4 i { display: inline-block; vertical-align: top; position: relative; background-position: 0 -666px; height: 17px; width: 17px; margin: 7px 7px; }
+.footer_info_block4 .footer_votSub4 .footer_info_block_Subscribe4 h1, .footer_info_block4 .footer_votSub4 .footer_info_block_Subscribe4 h2 { display: inline-block; vertical-align: top; position: relative; line-height: 30px; color: #ddd; font-size: 10px; }
+
+.footer_contact { display: inline-block; vertical-align: top; position: relative; width: 1020px; height: 70px; background-color: #1e1e1e; margin: 21px 0 0 0; font-weight: bold; }
+.footer_contact .email { display: inline-block; vertical-align: top; position: relative; width: 338px; height: 41px; line-height: 41px; border-radius: 2px; background-color: #272727; margin: 18px 0 0 40px; }
+.footer_contact .email input { display: inline-block; vertical-align: top; position: relative; width: 196px; height: 39px; background-color: #272727; border: none; margin: 0 21px 0 21px; }
+.footer_contact .email .footer_subscribe { display: inline-block; vertical-align: top; position: relative; width: 95px; height: 35px; border-radius: 5px; background-color: #1e1e1e; float: right; margin: 3px 3px 0 0; text-align: center; line-height: 36px; }
+.footer_contact .social { display: inline-block; vertical-align: top; position: relative; }
+.footer_contact .social li { display: inline-block; vertical-align: top; position: relative; }
+.footer_contact .social .social_fb { display: inline-block; vertical-align: top; position: relative; background-position: 0 -358px; height: 25px; width: 13px; margin: 26px 0 0 18px; }
+.footer_contact .social .social_fb:hover, .footer_contact .social .social_fb.Facebook-hover { background-position: 0 -383px; }
+.footer_contact .social .social_tw { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1341px; height: 25px; width: 30px; margin: 27px 0 0 10px; }
+.footer_contact .social .social_tw:hover, .footer_contact .social .social_tw.Twitter-hover { background-position: 0 -1366px; }
+.footer_contact .social .social_yt { display: inline-block; vertical-align: top; position: relative; background-position: 0 -1419px; height: 19px; width: 19px; margin: 30px 0 0 12px; }
+.footer_contact .social .social_yt:hover, .footer_contact .social .social_yt.Youtube-hover { background-position: 0 -1438px; }
+.footer_contact .footer_contact_nav { display: inline-block; vertical-align: top; position: relative; margin: 20px 49px 0 0; float: right; color: #bbbbbb; font: 400 12px; }
+.footer_contact .footer_contact_nav p { text-align: center; margin: 4px 0 0 0; }

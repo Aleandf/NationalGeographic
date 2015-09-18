@@ -1,0 +1,401 @@
+.hr {
+    width: 938px;
+    margin: 0 0 0 40px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.NGM {
+    @include display;
+    width: 936px;
+    height: 30px;
+    border: 1px solid #ddd;
+    line-height: 30px;
+    margin: 14px 0 0 40px;
+    i {
+        @include display;
+        @include icons-sprite(Magazine1);
+        margin: 6px 9px 0 9px;
+    }
+    .NGM_arrow {
+        @include display;
+        top: -2px;
+        float: right;
+        color: #ddd;
+        .arrowAgo {
+            @include display;
+            @include icons-sprite(Prev-Arrow);
+            right: -5px;
+        }
+        .arrowForward {
+            @include display;
+            @include icons-sprite(Next-Arrow);
+            left: -5px;
+        }
+    }
+}
+
+.footer_info_block {
+    @include display;
+    width: 226px;
+    border: 1px solid #ddd;
+    margin: 7px 0 0 40px;
+    .footer_info_block_in {
+        @include display;
+        width: 212px;
+        border: 1px solid #ddd;
+        margin: 3px;
+        padding: 3px;
+        text-align: center;
+        .footer_info_block_img {
+            @include display;
+            margin: 7px auto;
+        }
+        .footer_info_block_title {
+            @include display;
+            text-align: center;
+        }
+    }
+    .footer_votSub {
+        @include display;
+        width: 212px;
+        height: 30px;
+        margin: 11px 4px 4px 13px;
+        .footer_info_block_votes {
+            @include display;
+            width: 100px;
+            i {
+                @include display;
+                @include icons-sprite(Star);
+            }
+            i1 {
+                @include display;
+                @include icons-sprite(Star1);
+            }
+            i2 {
+                @include display;
+                @include icons-sprite(Star2);
+            }
+            i3 {
+                @include display;
+                @include icons-sprite(Star3);
+            }
+            i4 {
+                @include display;
+                @include icons-sprite(Star4);
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        .footer_info_block_Subscribe {
+            @include display;
+            width: 100px;
+            float: right;
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            i {
+                @include display;
+                @include icons-sprite(icon7);
+                margin: 7px 7px;
+            }
+            h1 {
+                @include display;
+                line-height: 30px;
+                color: #ddd;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.footer_info_block2 {
+    @include display;
+    width: 226px;
+    border: 1px solid #ddd;
+    margin: 7px 0 0 5px;
+    .footer_info_block_in2 {
+        @include display;
+        width: 212px;
+        border: 1px solid #ddd;
+        margin: 3px;
+        padding: 3px;
+        text-align: center;
+        .footer_info_block_img2 {
+            @include display;
+            margin: 7px auto;
+        }
+        .footer_info_block_title2 {
+            @include display;
+            text-align: center;
+        }
+    }
+    .footer_votSub2 {
+        @include display;
+        width: 212px;
+        height: 30px;
+        margin: 11px 4px 4px 13px;
+        .footer_info_block_votes2 {
+            @include display;
+            width: 100px;
+            i {
+                @include display;
+                @include icons-sprite(Star);
+            }
+            i1 {
+                @include display;
+                @include icons-sprite(Star1);
+            }
+            i2 {
+                @include display;
+                @include icons-sprite(Star2);
+            }
+            i3 {
+                @include display;
+                @include icons-sprite(Star3);
+            }
+            i4 {
+                @include display;
+                @include icons-sprite(Star4);
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        .footer_info_block_Subscribe2 {
+            @include display;
+            width: 100px;
+            float: right;
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            i {
+                @include display;
+                @include icons-sprite(icon7);
+                margin: 7px 7px;
+            }
+            h1 {
+                @include display;
+                line-height: 30px;
+                color: #ddd;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.footer_info_block3 {
+    @include display;
+    width: 226px;
+    border: 1px solid #ddd;
+    margin: 7px 0 0 5px;
+    .footer_info_block_in3 {
+        @include display;
+        width: 212px;
+        border: 1px solid #ddd;
+        margin: 3px;
+        padding: 3px;
+        text-align: center;
+        .footer_info_block_img3 {
+            @include display;
+            margin: 7px auto;
+        }
+        .footer_info_block_title3 {
+            @include display;
+            text-align: center;
+        }
+    }
+    .footer_votSub3 {
+        @include display;
+        width: 212px;
+        height: 30px;
+        margin: 11px 4px 4px 13px;
+        .footer_info_block_votes3 {
+            @include display;
+            width: 100px;
+            i {
+                @include display;
+                @include icons-sprite(Star);
+            }
+            i1 {
+                @include display;
+                @include icons-sprite(Star1);
+            }
+            i2 {
+                @include display;
+                @include icons-sprite(Star2);
+            }
+            i3 {
+                @include display;
+                @include icons-sprite(Star3);
+            }
+            i4 {
+                @include display;
+                @include icons-sprite(Star4);
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        .footer_info_block_Subscribe3 {
+            @include display;
+            width: 100px;
+            float: right;
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            i {
+                @include display;
+                @include icons-sprite(icon7);
+                margin: 7px 7px;
+            }
+            h1 {
+                @include display;
+                line-height: 30px;
+                color: #ddd;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.footer_info_block4 {
+    @include display;
+    width: 226px;
+    border: 1px solid #ddd;
+    margin: 7px 0 0 5px;
+    .footer_info_block_in4 {
+        @include display;
+        width: 212px;
+        border: 1px solid #ddd;
+        margin: 3px;
+        padding: 3px;
+        text-align: center;
+        .footer_info_block_img4 {
+            @include display;
+            margin: 7px auto;
+        }
+        .footer_info_block_title4 {
+            @include display;
+            text-align: center;
+        }
+    }
+    .footer_votSub4 {
+        @include display;
+        width: 212px;
+        height: 30px;
+        margin: 11px 4px 4px 13px;
+        .footer_info_block_votes4 {
+            @include display;
+            width: 100px;
+            i {
+                @include display;
+                @include icons-sprite(Star);
+            }
+            i1 {
+                @include display;
+                @include icons-sprite(Star1);
+            }
+            i2 {
+                @include display;
+                @include icons-sprite(Star2);
+            }
+            i3 {
+                @include display;
+                @include icons-sprite(Star3);
+            }
+            i4 {
+                @include display;
+                @include icons-sprite(Star4);
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        .footer_info_block_Subscribe4 {
+            @include display;
+            width: 100px;
+            float: right;
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            i {
+                @include display;
+                @include icons-sprite(icon7);
+                margin: 7px 7px;
+            }
+            h1 {
+                @include display;
+                line-height: 30px;
+                color: #ddd;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.footer_contact {
+    @include display;
+    width: 1020px;
+    height: 70px;
+    background-color: #1e1e1e;
+    margin: 21px 0 0 0;
+    font-weight: bold;
+    .email {
+        @include display;
+        width: 338px;
+        height: 41px;
+        line-height: 41px;
+        border-radius: 2px;
+        background-color: #272727;
+        margin: 18px 0 0 40px;
+        input {
+            @include display;
+            width: 196px;
+            height: 39px;
+            background-color: #272727;
+            border: none;
+            margin: 0 21px 0 21px;
+        }
+        .footer_subscribe {
+            @include display;
+            width: 95px;
+            height: 35px;
+            border-radius: 5px;
+            background-color: #1e1e1e;
+            float: right;
+            margin: 3px 3px 0 0;
+            text-align: center;
+            line-height: 36px;
+        }
+    }
+    .social {
+        @include display;
+        li {
+            @include display;
+        }
+        .social_fb {
+            @include display;
+            @include icons-sprite(Facebook);
+            margin: 26px 0 0 18px;
+        }
+        .social_tw {
+            @include display;
+            @include icons-sprite(Twitter);
+            margin: 27px 0 0 10px;
+        }
+        .social_yt {
+            @include display;
+            @include icons-sprite(Youtube);
+            margin: 30px 0 0 12px;
+        }
+    }
+    .footer_contact_nav {
+        @include display;
+        margin: 20px 49px 0 0;
+        float: right;
+        color: #bbbbbb;
+        font: 400 12px;
+        p {
+            text-align: center;
+            margin: 4px 0 0 0;
+        }
+    }
+}
